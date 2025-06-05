@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aktivitas - ExtraCura</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5EBDD;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #A1866F;
+      color: white;
+      padding: 20px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .logo img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .logo h3 {
+      font-size: 16px;
+      color: white;
+    }
+
+    .nav-item {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+      background-color: #8C6F5B;
+      border-radius: 8px;
+      padding-left: 10px;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      position: relative;
+    }
+
+    .content-header h1 {
+      color: #6f563b;
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .tabs {
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #6f563b;
+      border-bottom: 1px solid #b9a890;
+      padding-bottom: 10px;
+    }
+
+    .email-notification {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 320px;
+      font-size: 13px;
+    }
+
+    .email-notification strong {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .email-notification svg {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .notifications-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .notification-card {
+      background-color: #A1866F;
+      border-radius: 20px;
+      padding: 20px;
+      color: white;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .notification-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .notification-icon.success {
+      background-color: #4caf50;
+    }
+
+    .notification-icon.warning {
+      background-color: #ff9800;
+    }
+
+    .notification-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .notification-message {
+      font-size: 14px;
+      opacity: 0.95;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">
+      <img src="logo_sekolah.png" alt="Logo Sekolah" />
+      <h3>ExtraCura</h3>
+    </div>
+    <a href="#" class="nav-item">Dashboard</a>
+    <a href="#" class="nav-item">Ekstrakurikuler</a>
+    <a href="#" class="nav-item">Jadwal Kegiatan</a>
+    <a href="#" class="nav-item active">Aktivitas</a>
+  </div>
+
+  <div class="main-content">
+    <div class="email-notification">
+      <strong>Pendaftaran Berhasil!</strong>
+      <p>
+        <svg viewBox="0 0 24 24" fill="none"><path fill="#EA4335" d="M12 12L0 6v12l12 6 12-6V6z"/><path fill="#FBBC05" d="M0 6l12 6 12-6-12-6z"/><path fill="#34A853" d="M0 6v12l12-6z"/><path fill="#4285F4" d="M24 6v12L12 12z"/></svg>
+        Hai <strong>payying@gmail.com</strong>, Selamat Anda diterima sebagai anggota ekstrakurikuler Basket Sekolah Menengah XYZ... <a href="#"><strong>cek detail</strong></a>
+      </p>
+    </div>
+
+    <div class="content-header">
+      <h1>Aktivitas</h1>
+    </div>
+
+    <div class="tabs">Notifikasi</div>
+
+    <div class="notifications-container">
+     
+      <div class="notification-card">
+        <div class="notification-icon success">
+          <i class="fas fa-check"></i>
+        </div>
+        <div>
+          <div class="notification-title">Pendaftaran Berhasil</div>
+          <div class="notification-message">
+            SELAMAT! Anda telah terdaftar dan diterima sebagai anggota Ekstrakurikuler Basket, jangan lupa lihat Jadwal Kegiatan
+          </div>
+        </div>
+      </div>
+
+      <div class="notification-card">
+        <div class="notification-icon warning">
+          <i class="fas fa-exclamation"></i>
+        </div>
+        <div>
+          <div class="notification-title">Perubahan Jadwal</div>
+          <div class="notification-message">
+            Jadwal Kegiatan latihan Ekstrakurikuler Melukis telah diubah
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="notification-card">
+        <div class="notification-icon warning">
+          <i class="fas fa-exclamation"></i>
+        </div>
+        <div>
+          <div class="notification-title">Pengumuman</div>
+          <div class="notification-message">
+            Lomba Volly antar kelas semakin dekat! Catat jadwal kegiatan
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

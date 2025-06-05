@@ -1,0 +1,695 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    background-color: #f2e8dc;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #a48c74;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar .logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 50px;
+}
+
+h1 {
+    color: #5e4634;
+}
+
+.form-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #a48c74;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a725c;
+}
+
+a {
+    color: #5e4634;
+    text-decoration: underline;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fdfaf6;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #d8c4b6;
+  padding: 20px;
+  color: #333;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.logo h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px 40px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.user-icon img {
+  width: 30px;
+}
+
+/* Grid */
+.grid-ekskul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #a1866f;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #8b6e59;
+}
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #d8c4b6;
+  padding: 20px;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f6f1eb;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.grid-ekskul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 gambar per baris */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #7a5c58;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #5e4441;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #d8c4b6;
+  color: #333;
+  padding: 20px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar nav ul li a:hover {
+  color: #7a5c58;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f6f1eb;
+  overflow-y: auto;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  font-size: 24px;
+}
+
+.user-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Grid Ekstrakurikuler */
+.grid-ekskul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ukuran gambar seragam */
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Tombol Daftar */
+.card button {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #7a5c58;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card button:hover {
+  background-color: #5e4441;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0 20px 0;
+}
+
+/* Sidebar Style */
+.sidebar {
+  background-color: #1e2a38;
+  min-height: 100vh;
+  width: 250px;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #34495e;
+  color: #fff;
+}
+
+/* Main content area */
+.main-content {
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+form .form-control {
+  border-radius: 6px;
+}
+
+button.btn-primary {
+  background-color: #1e90ff;
+  border: none;
+}
+
+
+/* pendaftaran */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5EBDD;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #a1866f;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #F5EBDD;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  font-size: 24px;
+  color: #5c4b41;
+  margin: 0;
+}
+
+.user-icon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #6d5645;
+  margin: 10px 0 20px;
+}
+
+.formulir {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulir label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #5c4b41;
+}
+
+.formulir input {
+  background-color: #a1866f;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  color: white;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-light {
+  background-color: #f5ebdd;
+  color: #5c4b41;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: #a1866f;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-light:hover,
+.btn-dark:hover {
+  opacity: 0.9;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5EBDD;
+}
+
+/* Layout Wrapper */
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/* Main Content */ 
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #a1866f;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #F5EBDD;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  font-size: 24px;
+  color: #5c4b41;
+}
+
+.user-icon img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.divider {
+  margin: 15px 0 25px;
+  border: none;
+  border-top: 1px solid #6d5645;
+}
+
+/* Revisi form agar full width */
+.formulir {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formulir label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #5c4b41;
+}
+
+.formulir input {
+  background-color: #a1866f;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  color: white;
+  font-size: 14px;
+}
+
+.formulir input::placeholder {
+  color: #e5d4c4;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-light,
+.btn-dark {
+  padding: 10px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-light {
+  background-color: #f5ebdd;
+  color: #5c4b41;
+}
+
+.btn-dark {
+  background-color: #a1866f;
+  color: white;
+}
+
+.btn-light:hover,
+.btn-dark:hover {
+  opacity: 0.9;
+}
